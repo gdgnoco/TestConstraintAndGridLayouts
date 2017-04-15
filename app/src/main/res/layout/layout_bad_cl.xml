@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.testconstraintlayout.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <EditText
+        android:id="@+id/pcPhoneNumberEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/pcEmailAddressEditText"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/pcEmailAddressEditText" />
+
+    <EditText
+        android:id="@+id/pcEmailAddressEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="@+id/pcNameEditText"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/pcNameEditText" />
+
+    <TextView
+        android:id="@+id/customerNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/customerNameEditText"
+        android:text="@string/customer_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/customerNameEditText" />
+
+    <TextView
+        android:id="@+id/registrationNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/registrationNameEditText"
+        android:text="@string/registration_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/registrationNameEditText"
+        app:layout_constraintLeft_toLeftOf="@+id/customerNameLabel" />
+
+    <TextView
+        android:id="@+id/pcNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/pcNameEditText"
+        android:text="@string/pc_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pcNameEditText"
+        app:layout_constraintLeft_toLeftOf="@+id/registrationNameLabel" />
+
+    <TextView
+        android:id="@+id/pcEmailAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/pcEmailAddressEditText"
+        android:text="@string/pc_email_address"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pcEmailAddressEditText"
+        app:layout_constraintLeft_toLeftOf="@+id/pcNameLabel" />
+
+    <TextView
+        android:id="@+id/pcPhoneNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/pcPhoneNumberEditText"
+        android:text="@string/pc_phone_number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pcPhoneNumberEditText"
+        app:layout_constraintLeft_toLeftOf="@+id/pcEmailAddressLabel" />
+
+    <EditText
+        android:id="@+id/customerNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/registrationNameEditText"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registrationNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/registrationNameLabel"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/customerNameEditText" />
+
+    <EditText
+        android:id="@+id/pcNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="@+id/registrationNameEditText"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/registrationNameEditText" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6060291"
+        tools:layout_editor_absoluteX="583dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:text="@string/sales_tax"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pcPhoneNumberEditText"
+        app:layout_constraintRight_toLeftOf="@+id/guideline" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/lightGray"
+        app:layout_constraintBottom_toBottomOf="@+id/pcPhoneNumberEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/billing_address"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+</android.support.constraint.ConstraintLayout>

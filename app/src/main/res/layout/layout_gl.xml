@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.testconstraintlayout.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:padding="8dp"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds">
+
+    <TextView
+        android:id="@+id/customerNameLabel"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/customerNameEditText"
+        android:text="@string/customer_name" />
+
+    <EditText
+        android:id="@+id/customerNameEditText"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:ems="10"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/registrationNameLabel"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/registrationNameEditText"
+        android:text="@string/registration_name" />
+
+    <EditText
+        android:id="@+id/registrationNameEditText"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/pcNameLabel"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="2"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/pcNameEditText"
+        android:text="@string/pc_name" />
+
+    <EditText
+        android:id="@+id/pcNameEditText"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/pcEmailAddressLabel"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="3"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/pcEmailAddressEditText"
+        android:text="@string/pc_email_address" />
+
+    <EditText
+        android:id="@+id/pcEmailAddressEditText"
+        android:ems="20"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/pcPhoneNumberLabel"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="4"
+        android:background="@color/lightGray"
+        android:labelFor="@+id/pcPhoneNumberEditText"
+        android:text="@string/pc_phone_number" />
+
+    <EditText
+        android:id="@+id/pcPhoneNumberEditText"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:text="@string/sales_tax" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_gravity="fill"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="5"
+        android:layout_row="0"
+        android:layout_column="3"
+        android:background="@color/lightGray">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/billing_address"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+    <Space
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_row="5"/>
+</GridLayout>

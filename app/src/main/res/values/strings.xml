@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestConstraintLayout</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="registration_name">Registration Name</string>
+    <string name="pc_name">PC Name</string>
+    <string name="pc_email_address">PC Email Address</string>
+    <string name="pc_phone_number">PC Phone Number</string>
+    <string name="sales_tax">Sales Tax?</string>
+    <string name="billing_address">Billing Address</string>
+</resources>
